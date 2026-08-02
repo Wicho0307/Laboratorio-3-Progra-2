@@ -1,8 +1,17 @@
 package Nivel3.Herencia.Ejercicio053;
 
-public class Ejercicio053 {
-    public static void main(String[] args) {
-        // Escribe aquí la solución.
+class Animal {
+    public void sonido() {
+        System.out.println("El animal emite un sonido.");
     }
 }
 
+class Perro extends Animal {
+}
+
+public class Ejercicio053 {
+    public static void main(String[] args) {
+        Perro perro = new Perro();
+        perro.sonido();
+    }
+}
